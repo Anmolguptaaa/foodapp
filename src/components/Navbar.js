@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import Logo from "../assets/images/logo.png";
 import { cart } from "../Data";
 
+
 const Navbar = () => {
   const navbarRef = useRef();
   const searchRef = useRef();
@@ -38,22 +39,23 @@ const Navbar = () => {
           <a href="#contact">contact</a>
           <a href="#blogs">blogs</a>
         </nav>
-        <div className="icons">
+        <div className="icons" >
           <div
-            className="fas fa-search"
+          
             id="search-btn"
             onClick={searchHandler}
-          ></div>
+          > <i class="fa-solid fa-magnifying-glass"></i></div>
+        
           <div
-            className="fas fa-shopping-cart"
+            
             id="cart-btn"
             onClick={cartHandler}
-          ></div>
+          ><i class="fa-solid fa-cart-shopping"></i></div>
           <div
-            className="fas fa-bars"
+        
             id="menu-btn"
             onClick={navbarHandler}
-          ></div>
+          > <i class="fa-solid fa-bars"></i></div>
         </div>
         <div className="search-form" ref={searchRef}>
           <input type="search" id="search-box" placeholder="search here..." />

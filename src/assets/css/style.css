@@ -113,6 +113,10 @@ section {
   display: none;
 }
 
+.icons{
+  display: flex;
+}
+
 .header .search-form {
   position: absolute;
   top: 115%;
